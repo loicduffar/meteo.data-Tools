@@ -12,7 +12,8 @@ Fiche PDF des postes : https://www.data.gouv.fr/fr/datasets/r/bee4b0c7-260a-40fe
 ### Portail meteo.data - Téléchargement & affichage des "dernières" (latest) données MENSUELLES de Météo-France (Métropole & outre-mer)
 Une connexion internet est nécessaire pour accéder aux archives des données à l'url ci-dessous
 
-Les "dernières" données (latest) correspondent aux fichiers mis à jour quotidiennement, et qui vont du mois de janvier de l'année précédente au mois en cours même partiel (pour les données mensuelles)
+- Les "dernières" données (latest) correspondent aux fichiers mis à jour quotidiennement, et qui vont du mois de janvier de l'année précédente au mois en cours même partiel (pour les données mensuelles)
+- Le script trace le graphique chronologique pour un paramètre et plusieurs postes choisis par l'utilisateur
 
 data : https://meteo.data.gouv.fr/ (6 min, horaire, quotidien, mensuel)<br>
 Fiche PDF des postes : https://www.data.gouv.fr/fr/datasets/r/bee4b0c7-260a-40fe-b463-ed5631d6dc39 (paramètres et périodes de mesure)<br>
