@@ -1,5 +1,5 @@
 # meteo.data-Tools
-Outils d'exploitation des données opendata de Météo-France en ligne sur meteo.data.gouv.fr
+Outils de Visualisaiton-Extraction des données opendata de Météo-France en ligne sur meteo.data.gouv.fr
 
 ### Portail meteo.data - Carte des postes météorologiques de Météo-France (Métropole & outre-mer)
 Une connexion internet est nécessaire pour accéder au fichier JSON et au fond de carte
