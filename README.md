@@ -13,7 +13,7 @@ Fiche PDF des postes : https://www.data.gouv.fr/fr/datasets/r/bee4b0c7-260a-40fe
 Une connexion internet est nécessaire pour accéder aux archives des données à l'url ci-dessous
 
 - Les "dernières" données (latest) correspondent aux fichiers mis à jour quotidiennement, et qui vont du mois de janvier de l'année précédente au mois en cours même partiel (pour les données mensuelles)
-- Le script trace le graphique chronologique du paramètre Précipitations RR pour plusieurs postes choisis par l'utilisateur
+- Le script trace le graphique chronologique du paramètre Précipitations RR pour plusieurs postes choisis par l'utilisateur dans plusieurs départements
 - Les données intégrales des postes choisis (tous les paramètres de la période "Latest") sont sauvegardées dans un fichier Excel avec le graphique
 
 data : https://meteo.data.gouv.fr/ (6 min, horaire, quotidien, mensuel)<br>
