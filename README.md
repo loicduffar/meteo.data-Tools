@@ -24,7 +24,7 @@ Utilisez mon autre script pour visualiser sous forme de carte la liste des poste
 
 ### Portail meteo.data - Données climatiques quotidienne (SIM2 = SAFRAN-ISBA) - Extraction de série chronologique pour une maille (1x1 km)
 
-- Les données sont à télécharger sur le portail ci-dessous (chaque décennie repésente 1.1 Go en archive et 5 Go décompressé)<br>
+- Télécharger auparavant les données depuis le portail ci-dessous (chaque décennie repésente 1.1 Go en archive et 5 Go décompressé)<br>
 - Le scrit trace le graphique sur une décennie des paramètres choisis (par exemple 10 pour limiter l'occupation en mémoire vive), et sauvegarde les séries chronologiques dans un fichier Excel.<br>
 Le graphique dynamique est également sauvegardé en Html
 
