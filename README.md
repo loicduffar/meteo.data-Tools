@@ -44,3 +44,4 @@ Le graphique dynamique est également sauvegardé en Html
 
 ![Précipitations quotidiennes](https://github.com/loicduffar/meteo.data-Tools/blob/main/out/meteo.data%20QUOT_latest-2022-2023_RR-T-Vent.png)
 ![Précipitations mensuelles](https://github.com/loicduffar/meteo.data-Tools/blob/main/out/meteo.data%20MENS_latest-2022-2023.png)
+![SIM2 quotidien (SAFRAN)]https://github.com/loicduffar/meteo.data-Tools/blob/main/out/SIM2_graph.png)
