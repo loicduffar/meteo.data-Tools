@@ -7,7 +7,7 @@ Une connexion internet est nécessaire pour accéder au fichier JSON et au fond 
 - La carte dynamique des postes est tracée à partir du fichier JSON de Météo-France (avec l'affichage des noms du poste et de la commune, ainsi que l'alitude)<br>
 - La carte dynamique est enregistrée en Html, ainsi qu'en version statique png
 - La liste est enregistrée au format excel
-- NB: code adapté au format du fichier JSON en décembre 2023
+- NB: code adapté au format du fichier JSON en décembre 2023, qui n'était pas conforme au format geoJSON
 
 data : https://meteo.data.gouv.fr/ (6 min, horaire, quotidien, mensuel)<br>
 Fiche PDF des postes : https://www.data.gouv.fr/fr/datasets/r/bee4b0c7-260a-40fe-b463-ed5631d6dc39 (paramètres et périodes de mesure)<br>
