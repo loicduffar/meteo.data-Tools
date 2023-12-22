@@ -7,18 +7,8 @@ Une connexion internet est nécessaire pour accéder au fichier JSON et au fond 
 Le fichier JSON de Météo-France contient les noms du poste et de la commune, et l'alitude<br>
 
 data : https://meteo.data.gouv.fr/ (6 min, horaire, quotidien, mensuel)<br>
-Fiche PDF des postes : https://www.data.gouv.fr/fr/datasets/r/bee4b0c7-260a-40fe-b463-ed5631d6dc39 (paramètres et périodes de mesure)
-<img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/postes%20meteo-france%20-%20carte_2023-12-20.png" width="30%"></img>
-Une connexion internet est nécessaire pour accéder aux archives des données à l'url ci-dessous
-
-- Les "dernières" données (latest) correspondent aux fichiers mis à jour quotidiennement, et qui vont du mois de janvier de l'année précédente au mois en cours même partiel (pour les données mensuelles).
-- Les fichiers sont téléchargés et décompressés automatiquement, pour plusieurs départements si besoin
-- Le graphique chronologique est tracé pour le paramètre Précipitations RR des postes choisis par l'utilisateur
-- Les données intégrales sont rassemblées dans un même fichier Excel avec le graphique (tous paramètres de la période "Latest" pour tous les postes des départements concernés).
-
-data : https://meteo.data.gouv.fr/ (6 min, horaire, quotidien, mensuel)<br>
 Fiche PDF des postes : https://www.data.gouv.fr/fr/datasets/r/bee4b0c7-260a-40fe-b463-ed5631d6dc39 (paramètres et périodes de mesure)<br>
-Fichier CSV descriptif champs: https://www.data.gouv.fr/fr/datasets/r/6d4ac560-8f7c-477f-9a3f-3c33137fc04e
+<img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/postes%20meteo-france%20-%20carte_2023-12-20.png" width="30%"></img><br>
 
 ### Téléchargement-affichage-Extraction des "dernières" données (latest) QUOTIDIENNES de Météo-France (RR-T-Vent)
 Ce script ntraite uniquement le fichier "RR-T-vent" (Précipitations, Température, Vent) à l'exclusion du fichier "autres-parametres" contenant notamment l'ETP.<br>
