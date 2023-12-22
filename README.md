@@ -36,7 +36,7 @@ data : https://meteo.data.gouv.fr/ (6 min, horaire, quotidien, mensuel)<br>
 Fiche PDF des postes : https://www.data.gouv.fr/fr/datasets/r/bee4b0c7-260a-40fe-b463-ed5631d6dc39 (paramètres et périodes de mesure)<br>
 Fichier CSV descriptif champs: https://www.data.gouv.fr/fr/datasets/r/6a8df7e9-45ff-445d-9260-6c65475dda86
 
-### Portail meteo.data - Données climatiques quotidienne (SIM2 = SAFRAN-ISBA) - Extraction de série chronologique pour une maille (1x1 km)
+### Données climatiques quotidienne (SIM2 = SAFRAN-ISBA) - Extraction de série chronologique pour une maille (1x1 km)
 
 - Télécharger auparavant les données depuis le portail ci-dessous (chaque décennie repésente 1.1 Go en archive et 5 Go décompressé)<br>
 - Le scrit trace le graphique sur une décennie des paramètres choisis (par exemple 10 pour limiter l'occupation en mémoire vive), et sauvegarde les séries chronologiques dans un fichier Excel.<br>
