@@ -12,7 +12,7 @@ Une connexion internet est nécessaire pour accéder au fichier JSON et au fond 
 data : https://meteo.data.gouv.fr/ (6 min, horaire, quotidien, mensuel)<br>
 Fiche PDF des postes : https://www.data.gouv.fr/fr/datasets/r/bee4b0c7-260a-40fe-b463-ed5631d6dc39 (paramètres et périodes de mesure)<br>
 
- <a href="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/postes%20meteo-france%20-%20carte_2023-12-20.html"><img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/postes%20meteo-france%20-%20carte_2023-12-20.png" width="45%"></a>
+<img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/postes%20meteo-france%20-%20carte_2023-12-20.png" width="45%"></img>
 
 ### Portail meteo.data.gouv.fr - Téléchargement-affichage-Extraction des "dernières" données (latest) MENSUELLES de Météo-France (Métropole & outre-mer)
 Une connexion internet est nécessaire pour accéder aux archives des données à l'url ci-dessous
