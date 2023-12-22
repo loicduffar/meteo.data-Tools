@@ -42,4 +42,5 @@ Fichier CSV descriptif champs: https://www.data.gouv.fr/fr/datasets/r/6a8df7e9-4
 - Le scrit trace le graphique sur une décennie des paramètres choisis (par exemple 10 pour limiter l'occupation en mémoire vive), et sauvegarde les séries chronologiques dans un fichier Excel.<br>
 Le graphique dynamique est également sauvegardé en Html
 
-[data: https://meteo.data.gouv.fr/<br>](https://github.com/loicduffar/meteo.data-Tools/blob/main/out/meteo.data%20QUOT_latest-2022-2023_RR-T-Vent.png)https://github.com/loicduffar/meteo.data-Tools/blob/main/out/meteo.data%20QUOT_latest-2022-2023_RR-T-Vent.png
+< img src="[data: https://meteo.data.gouv.fr/<br>](https://github.com/loicduffar/meteo.data-Tools/blob/main/out/meteo.data%20QUOT_latest-2022-2023_RR-T-Vent.png)https://github.com/loicduffar/meteo.data-Tools/blob/main/out/meteo.data%20QUOT_latest-2022-2023_RR-T-Vent.png" alt="Précipitations quotidiennes" >
+
