@@ -21,7 +21,20 @@ data : https://meteo.data.gouv.fr/ (6 min, horaire, quotidien, mensuel)<br>
 Fiche PDF des postes : https://www.data.gouv.fr/fr/datasets/r/bee4b0c7-260a-40fe-b463-ed5631d6dc39 (paramètres et périodes de mesure)<br>
 Fichier CSV descriptif champs: https://www.data.gouv.fr/fr/datasets/r/6d4ac560-8f7c-477f-9a3f-3c33137fc04e
 
-Utilisez mon autre script pour visualiser sous forme de carte la liste des postes météorologiques fournie par Météo-France sous forme de fichier JSON https://meteo.data.gouv.fr/https://www.data.gouv.fr/fr/datasets/r/1fe544d8-4615-4642-a307-5956a7d90922
+### Portail meteo.data - Téléchargement-affichage-Extraction des "dernières" données (latest) QUOTIDIENNES de Météo-France (RR-T-Vent)
+Ce script ntraite uniquement le fichier "RR-T-vent" (Précipitations, Température, Vent) à l'exclusion du fichier "autres-parametres" contenant notamment l'ETP.<br>
+Une connexion internet est nécessaire pour accéder aux archives des données à l'url ci-dessous.
+
+- Les "dernières" données (latest) correspondent aux fichiers mis à jour quotidiennement, et qui vont du mois de janvier de l'année précédente au mois en cours même partiel.
+- Les fichiers quotidiens sont téléchargés et décompressés automatiquement, pour plusieurs départements si besoin
+- Les graphiques chronologiques QUOTIDIEN & MENSUEL sont tracés pour le paramètre Précipitations RR des postes choisis par l'utilisateur
+- Un fichier excel rassemble:
+    - Les données intégrales (tous paramètres de la période "Latest" pour tous les postes des départements concernés).
+    - la comparaison des précipitations pour les postes et la période choisis, avec les graphiques quotidien & mensuel
+
+data : https://meteo.data.gouv.fr/ (6 min, horaire, quotidien, mensuel)<br>
+Fiche PDF des postes : https://www.data.gouv.fr/fr/datasets/r/bee4b0c7-260a-40fe-b463-ed5631d6dc39 (paramètres et périodes de mesure)<br>
+Fichier CSV descriptif champs: https://www.data.gouv.fr/fr/datasets/r/6a8df7e9-45ff-445d-9260-6c65475dda86
 
 ### Portail meteo.data - Données climatiques quotidienne (SIM2 = SAFRAN-ISBA) - Extraction de série chronologique pour une maille (1x1 km)
 
