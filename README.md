@@ -41,7 +41,7 @@ Fichier CSV descriptif champs: https://www.data.gouv.fr/fr/datasets/r/6a8df7e9-4
 - Télécharger auparavant les données depuis le portail ci-dessous (chaque décennie repésente 1.1 Go en archive et 5 Go décompressé)<br>
 - Le scrit trace le graphique sur une décennie des paramètres choisis (par exemple 10 pour limiter l'occupation en mémoire vive), et sauvegarde les séries chronologiques dans un fichier Excel.<br>
 Le graphique dynamique est également sauvegardé en Html
-
+![Carte des poste Météo-France](https://github.com/loicduffar/meteo.data-Tools/blob/main/out/postes%20meteo-france%20-%20carte_2023-12-20.png)
 ![Précipitations quotidiennes](https://github.com/loicduffar/meteo.data-Tools/blob/main/out/meteo.data%20QUOT_latest-2022-2023_RR-T-Vent.png)
 ![Précipitations mensuelles](https://github.com/loicduffar/meteo.data-Tools/blob/main/out/meteo.data%20MENS_latest-2022-2023.png)
 ![SIM2 quotidien (SAFRAN)](https://github.com/loicduffar/meteo.data-Tools/blob/main/out/SIM2_graph.png)
