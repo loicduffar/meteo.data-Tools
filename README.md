@@ -8,8 +8,7 @@ Le fichier JSON de Météo-France contient les noms du poste et de la commune, e
 
 data : https://meteo.data.gouv.fr/ (6 min, horaire, quotidien, mensuel)<br>
 Fiche PDF des postes : https://www.data.gouv.fr/fr/datasets/r/bee4b0c7-260a-40fe-b463-ed5631d6dc39 (paramètres et périodes de mesure)
-
-### Téléchargement-affichage-Extraction des "dernières" (latest) données MENSUELLES de Météo-France (Métropole & outre-mer)
+<img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/postes%20meteo-france%20-%20carte_2023-12-20.png" width="30%"></img>
 Une connexion internet est nécessaire pour accéder aux archives des données à l'url ci-dessous
 
 - Les "dernières" données (latest) correspondent aux fichiers mis à jour quotidiennement, et qui vont du mois de janvier de l'année précédente au mois en cours même partiel (pour les données mensuelles).
