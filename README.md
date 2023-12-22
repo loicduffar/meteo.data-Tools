@@ -11,6 +11,18 @@ Fiche PDF des postes : https://www.data.gouv.fr/fr/datasets/r/bee4b0c7-260a-40fe
 
 <img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/postes%20meteo-france%20-%20carte_2023-12-20.png" width="30%"></img><br>
 
+### Portail meteo.data.gouv.fr - Téléchargement-affichage-Extraction des "dernières" données (latest) MENSUELLES de Météo-France (Métropole & outre-mer)
+Une connexion internet est nécessaire pour accéder aux archives des données à l'url ci-dessous
+
+- Les "dernières" données (latest) correspondent aux fichiers mis à jour quotidiennement, et qui vont du mois de janvier de l'année précédente au mois en cours même partiel (pour les données mensuelles).
+- Les fichiers sont téléchargés et décompressés automatiquement, pour plusieurs départements si besoin
+- Le graphique chronologique est tracé pour le paramètre Précipitations RR des postes choisis par l'utilisateur
+- Les données intégrales sont rassemblées dans un même fichier Excel avec le graphique (tous paramètres de la période "Latest" pour tous les postes des départements concernés).
+
+data : https://meteo.data.gouv.fr/ (6 min, horaire, quotidien, mensuel)<br>
+Fiche PDF des postes : https://www.data.gouv.fr/fr/datasets/r/bee4b0c7-260a-40fe-b463-ed5631d6dc39 (paramètres et périodes de mesure)<br>
+Fichier CSV descriptif champs: https://www.data.gouv.fr/fr/datasets/r/6d4ac560-8f7c-477f-9a3f-3c33137fc04e
+
 <img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/meteo.data%20QUOT_latest-2022-2023_RR-T-Vent.png" width="45%"></img>
 <img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/meteo.data%20MENS_latest-2022-2023.png" width="45%"></img>
 
