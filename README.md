@@ -1,7 +1,7 @@
 # meteo.data-Tools
 Outils de Visualisation-Extraction des données open-data de Météo-France en ligne sur [meteo.data.gouv.fr](https://meteo.data.gouv.fr/)
 
-### Portail meteo.data - Carte des postes météorologiques de Météo-France (Métropole & outre-mer)
+### Carte des postes météorologiques de Météo-France (Métropole & outre-mer)
 Une connexion internet est nécessaire pour accéder au fichier JSON et au fond de carte
 
 Le fichier JSON de Météo-France contient les noms du poste et de la commune, et l'alitude<br>
@@ -9,7 +9,7 @@ Le fichier JSON de Météo-France contient les noms du poste et de la commune, e
 data : https://meteo.data.gouv.fr/ (6 min, horaire, quotidien, mensuel)<br>
 Fiche PDF des postes : https://www.data.gouv.fr/fr/datasets/r/bee4b0c7-260a-40fe-b463-ed5631d6dc39 (paramètres et périodes de mesure)
 
-### Portail meteo.data - Téléchargement & affichage des "dernières" (latest) données MENSUELLES de Météo-France (Métropole & outre-mer)
+### Téléchargement-affichage-Extraction des "dernières" (latest) données MENSUELLES de Météo-France (Métropole & outre-mer)
 Une connexion internet est nécessaire pour accéder aux archives des données à l'url ci-dessous
 
 - Les "dernières" données (latest) correspondent aux fichiers mis à jour quotidiennement, et qui vont du mois de janvier de l'année précédente au mois en cours même partiel (pour les données mensuelles).
@@ -21,7 +21,7 @@ data : https://meteo.data.gouv.fr/ (6 min, horaire, quotidien, mensuel)<br>
 Fiche PDF des postes : https://www.data.gouv.fr/fr/datasets/r/bee4b0c7-260a-40fe-b463-ed5631d6dc39 (paramètres et périodes de mesure)<br>
 Fichier CSV descriptif champs: https://www.data.gouv.fr/fr/datasets/r/6d4ac560-8f7c-477f-9a3f-3c33137fc04e
 
-### Portail meteo.data - Téléchargement-affichage-Extraction des "dernières" données (latest) QUOTIDIENNES de Météo-France (RR-T-Vent)
+### Téléchargement-affichage-Extraction des "dernières" données (latest) QUOTIDIENNES de Météo-France (RR-T-Vent)
 Ce script ntraite uniquement le fichier "RR-T-vent" (Précipitations, Température, Vent) à l'exclusion du fichier "autres-parametres" contenant notamment l'ETP.<br>
 Une connexion internet est nécessaire pour accéder aux archives des données à l'url ci-dessous.
 
