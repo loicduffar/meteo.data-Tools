@@ -16,12 +16,12 @@ Fiche PDF des postes : https://www.data.gouv.fr/fr/datasets/r/bee4b0c7-260a-40fe
 <img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/postes%20meteo-france%20-%20carte_2023-12-20_monde.png" width="30%"></img>
 
 ### Portail meteo.data.gouv.fr - Téléchargement-affichage-Extraction des "dernières" données (latest) MENSUELLES de Météo-France (Métropole & outre-mer)
-Une connexion internet est nécessaire pour accéder aux archives des données à l'url ci-dessous
+Une connexion internet est nécessaire pour l'accès en ligne aux archives des données
 
-- Les "dernières" données (latest) correspondent aux fichiers mis à jour quotidiennement, et qui vont du mois de janvier de l'année précédente au mois en cours même partiel (pour les données mensuelles).
-- Les fichiers sont téléchargés et décompressés automatiquement, pour plusieurs départements si besoin
-- Le graphique chronologique est tracé pour le paramètre Précipitations RR des postes choisis par l'utilisateur
-- Les données intégrales sont rassemblées dans un même fichier Excel avec le graphique (tous paramètres de la période "Latest" pour tous les postes des départements concernés).
+Les "dernières" données (latest) correspondent aux fichiers mis à jour quotidiennement, et qui vont du mois de janvier de l'année précédente au mois en cours même partiel (pour les données mensuelles).
+1) Téléchargement des fichiers et décompression automatique, pour plusieurs départements si besoin
+2) Tracé du graphique chronologique pour le paramètre Précipitations RR des postes choisis par l'utilisateur
+3) Sauvegarde des données intégrales et du graphique dans un fichier Excel (tous paramètres de la période "Latest" pour tous les postes des départements concernés).
 
 data : https://meteo.data.gouv.fr/ (6 min, horaire, quotidien, mensuel)<br>
 Fiche PDF des postes : https://www.data.gouv.fr/fr/datasets/r/bee4b0c7-260a-40fe-b463-ed5631d6dc39 (paramètres et périodes de mesure)<br>
@@ -34,10 +34,11 @@ Fichier CSV descriptif champs: https://www.data.gouv.fr/fr/datasets/r/6d4ac560-8
 Ce script ntraite uniquement le fichier "RR-T-vent" (Précipitations, Température, Vent) à l'exclusion du fichier "autres-parametres" contenant notamment l'ETP.<br>
 Une connexion internet est nécessaire pour accéder aux archives des données à l'url ci-dessous.
 
-- Les "dernières" données (latest) correspondent aux fichiers mis à jour quotidiennement, et qui vont du mois de janvier de l'année précédente au mois en cours même partiel.
-- Les fichiers quotidiens sont téléchargés et décompressés automatiquement, pour plusieurs départements si besoin
-- Les graphiques chronologiques QUOTIDIEN & MENSUEL sont tracés pour le paramètre Précipitations RR des postes choisis par l'utilisateur
-- Un fichier excel rassemble:
+Les "dernières" données (latest) correspondent aux fichiers mis à jour quotidiennement, et qui vont du mois de janvier de l'année précédente au mois en cours même partiel.
+1) Téléchargement des fichiers quotidiens et décompression automatique, pour plusieurs départements si besoin
+2) Tracé du graphique chronologique QUOTIDIEN pour le paramètre Précipitations RR des postes choisis par l'utilisateur
+3) Tracé du graphiqueu chronologiqueu MENSUEL
+4) Sauvegarde d'un fichier excel rassemblant:
     - Les données intégrales (tous paramètres de la période "Latest" pour tous les postes des départements concernés).
     - la comparaison des précipitations pour les postes et la période choisis, avec les graphiques quotidien & mensuel
 
