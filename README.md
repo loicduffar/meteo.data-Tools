@@ -52,4 +52,5 @@ Auparavant, télécharger les données depuis le portail ci-dessous (chaque déc
 3) Tracé du graphique chronologique de la décennie pour les paramètres et le point de maille choisis (par exemple 10 paramètres pour limiter l'occupation en mémoire vive)
 4) Sauvegarde des séries chronologiques avec le graphique dans un fichier Excel<br>
     Le graphique dynamique est également sauvegardé en Html
+
 <img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/SIM2_graph.png" width="45%"></img>
