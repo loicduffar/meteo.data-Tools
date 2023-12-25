@@ -64,3 +64,4 @@ Auparavant, télécharger les données depuis le portail ci-dessous (chaque déc
     Le graphique dynamique est également sauvegardé en Html
 
 <img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/SIM2_graph.png" width="45%"></img>
+<img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/SIM2_map%20.png" width="45%"></img>
