@@ -15,10 +15,8 @@ Fiche PDF des postes : https://www.data.gouv.fr/fr/datasets/r/bee4b0c7-260a-40fe
 <img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/postes%20meteo-france%20-%20carte_2023-12-20.png" width="30%"></img>
 <img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/postes%20meteo-france%20-%20carte_2023-12-20_monde.png" width="30%"></img>
 
-### Portail meteo.data.gouv.fr - Téléchargement-affichage-Extraction des "dernières" données (latest) MENSUELLES de Météo-France (Métropole & outre-mer)
+### Portail meteo.data.gouv.fr - Téléchargement-affichage-Extraction des données MENSUELLES LATEST de Météo-France (Métropole & outre-mer)
 Une connexion internet est nécessaire pour l'accès en ligne aux archives des données
-
-Les "dernières" données (latest) correspondent aux fichiers mis à jour quotidiennement, et qui vont du mois de janvier de l'année précédente au mois en cours même partiel (pour les données mensuelles).
 1) Téléchargement des fichiers et décompression automatique, pour plusieurs départements si besoin
 2) Tracé du graphique chronologique pour le paramètre Précipitations RR des postes choisis par l'utilisateur
 3) Sauvegarde des données intégrales et du graphique dans un fichier Excel (tous paramètres de la période "Latest" pour tous les postes des départements concernés).
@@ -27,24 +25,35 @@ data : https://meteo.data.gouv.fr/ (6 min, horaire, quotidien, mensuel)<br>
 Fiche PDF des postes : https://www.data.gouv.fr/fr/datasets/r/bee4b0c7-260a-40fe-b463-ed5631d6dc39 (paramètres et périodes de mesure)<br>
 Fichier CSV descriptif champs: https://www.data.gouv.fr/fr/datasets/r/6d4ac560-8f7c-477f-9a3f-3c33137fc04e
 
+Utilisez mon autre script pour visualiser sous forme de carte la liste des postes météorologiques fournie par Météo-France sous forme de fichier JSON https://meteo.data.gouv.fr/https://www.data.gouv.fr/fr/datasets/r/1fe544d8-4615-4642-a307-5956a7d90922
+
+NB:
+- Les données LATEST correspondent aux DERNIERS fichiers mis à jour quotidiennement, et qui vont du mois de janvier de l'année précédente au mois en cours même partiel.
+- Les données MENSUELLES ne sont pas simplement équivalentes à des données QUOTIDIENNE agrégées (les paramètres ne sont pas strictement les mêmes. Par exemple, il existe des des NOMBRES DE JOURS DE PLUIE/GELEE/CHALEUR/etc.., ainsi que des précipitations MENSUELLES ESTIMEES 'RR_ME' plus anciennes que les mesures)
+
 <img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/meteo.data%20QUOT_latest-2022-2023_RR-T-Vent.png" width="45%"></img>
 <img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/meteo.data%20MENS_latest-2022-2023.png" width="45%"></img>
 
-### Téléchargement-affichage-Extraction des "dernières" données (latest) QUOTIDIENNES de Météo-France (RR-T-Vent)
-Ce script ntraite uniquement le fichier "RR-T-vent" (Précipitations, Température, Vent) à l'exclusion du fichier "autres-parametres" contenant notamment l'ETP.<br>
+### Portail meteo.data.gouv.fr - Téléchargement-affichage-Extraction des données QUOTIDIENNES LATEST de Météo-France (RR-T-Vent)
+Ce script ntraite uniquement le fichier "RR-T-vent" (Paramètres liés aux Précipitations, Température & Vent) à l'exclusion du fichier "autres-parametres" contenant notamment l'ETP.<br>
 Une connexion internet est nécessaire pour accéder aux archives des données à l'url ci-dessous.
 
-Les "dernières" données (latest) correspondent aux fichiers mis à jour quotidiennement, et qui vont du mois de janvier de l'année précédente au mois en cours même partiel.
 1) Téléchargement des fichiers quotidiens et décompression automatique, pour plusieurs départements si besoin
 2) Tracé du graphique chronologique QUOTIDIEN pour le paramètre Précipitations RR des postes choisis par l'utilisateur
-3) Tracé du graphiqueu chronologiqueu MENSUEL
+3) Tracé du graphique chronologique de l'agrégation MENSUELLE
 4) Sauvegarde d'un fichier excel rassemblant:
-    - Les données intégrales (tous paramètres de la période "Latest" pour tous les postes des départements concernés).
-    - la comparaison des précipitations pour les postes et la période choisis, avec les graphiques quotidien & mensuel
+    - Les données intégrales QUOTIDIENNES et agrégées MENSUELLEMENT (tous paramètres de la période "Latest" pour tous les postes des départements concernés).
+    - la comparaison des paramètres pour les postes et la période choisis, ainsi que pour les précipitations les graphiques quotidien & mensuel
 
 data : https://meteo.data.gouv.fr/ (6 min, horaire, quotidien, mensuel)<br>
 Fiche PDF des postes : https://www.data.gouv.fr/fr/datasets/r/bee4b0c7-260a-40fe-b463-ed5631d6dc39 (paramètres et périodes de mesure)<br>
 Fichier CSV descriptif champs: https://www.data.gouv.fr/fr/datasets/r/6a8df7e9-45ff-445d-9260-6c65475dda86
+
+Utilisez mon autre script pour visualiser sous forme de carte la liste des postes météorologiques fournie par Météo-France sous forme de fichier JSON https://meteo.data.gouv.fr/https://www.data.gouv.fr/fr/datasets/r/1fe544d8-4615-4642-a307-5956a7d90922
+
+NB: 
+- Les données LATEST correspondent aux DERNIERS FICHIERS mis à jour quotidiennement, et qui vont du mois de janvier de l'année précédente au mois en cours même partiel.
+- Les données QUOTDIENNES agrégées mensuellement ne sont pas simplement équivalentes aux donnée MENSUELLES. Les paramètres ne sont pas strictement les mêmes. Certains paramètres quotidiens n'existent pas en mensuel (par exemple concernant le vent), mais les paramètres mensuels sont globalement plus nombreux à cause des paramètres "calculés" (par exemple des NOMBRES DE JOURS DE PLUIE/GELEE/CHALEUR/etc.., ainsi que des précipitations MENSUELLES ESTIMEES 'RR_ME' plus anciennes que les mesures)
 
 ### Données climatiques quotidienne (SIM2 = SAFRAN-ISBA) - Extraction de série chronologique pour une maille (1x1 km)
 Auparavant, télécharger les données depuis le portail ci-dessous (chaque décennie repésente 1.1 Go en archive et 5 Go décompressé)<br>
