@@ -31,9 +31,9 @@ NB:
 - Les données LATEST correspondent aux DERNIERS fichiers mis à jour quotidiennement, et qui vont du mois de janvier de l'année précédente au mois en cours même partiel.
 - Les données MENSUELLES ne sont pas simplement équivalentes à des données QUOTIDIENNE agrégées (les paramètres ne sont pas strictement les mêmes. Par exemple, il existe des des NOMBRES DE JOURS DE PLUIE/GELEE/CHALEUR/etc.., ainsi que des précipitations MENSUELLES ESTIMEES 'RR_ME' plus anciennes que les mesures)
 
-<img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/meteo.data%20HOR_latest-2022-2023.png" width="40%"></img>
-<img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/meteo.data%20QUOT_latest-2022-2023_RR-T-Vent.png" width="40%"></img>
-<img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/meteo.data%20MENS_latest-2022-2023.png" width="40%"></img>
+<img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/meteo.data%20HOR_latest-2022-2023.png" width="30%"></img>
+<img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/meteo.data%20QUOT_latest-2022-2023_RR-T-Vent.png" width="30%"></img>
+<img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/meteo.data%20MENS_latest-2022-2023.png" width="30%"></img>
 
 ### Portail meteo.data.gouv.fr - Téléchargement-affichage-Extraction des données QUOTIDIENNES LATEST de Météo-France (RR-T-Vent)
 Ce script ntraite uniquement le fichier "RR-T-vent" (Paramètres liés aux Précipitations, Température & Vent) à l'exclusion du fichier "autres-parametres" contenant notamment l'ETP.<br>
