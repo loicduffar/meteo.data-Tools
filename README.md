@@ -1,5 +1,5 @@
 # meteo.data.gouv.fr - Tools
-Notebooks python de Visualisation-Extraction (& Téléchargement éventuellement) des données de Météo-France, open-data depuis décembre 2023, en ligne sur [meteo.data.gouv.fr](https://meteo.data.gouv.fr/)
+Notebooks python de Visualisation-Extraction (& Téléchargement éventuellement) des données de Météo-France, ouvertes en open-data en décembre 2023, en ligne sur [meteo.data.gouv.fr](https://meteo.data.gouv.fr/)
 
 ### Carte des postes météorologiques de Météo-France (Métropole & outre-mer)
 Une connexion internet est nécessaire pour accéder au fichier JSON et au fond de carte
