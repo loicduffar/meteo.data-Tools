@@ -74,6 +74,7 @@ Utilisez mon autre script pour visualiser la carte des postes météorologiques 
 NB: 
 - Les données LATEST correspondent aux DERNIERS FICHIERS mis à jour quotidiennement, et qui vont du mois de janvier de l'année précédente à la veille du jour en cours même partielle.
 - Les données HORAIRES agrégées quotidiennement ne sont pas simplement équivalentes aux donnée QUOTIDIENNES car les paramètres ne sont pas strictement les mêmes. Certains paramètres horaires n'existent pas en quotidiens (ex. DRR1 durée des précipitations (en mn/heure)), et inversement
+
 <img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/meteo.data%20HOR_latest-2022-2023.png" width="45%"></img>
 
 ### Données climatiques quotidienne (SIM2 = SAFRAN-ISBA) - Extraction de série chronologique pour une maille (1x1 km)
