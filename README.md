@@ -55,6 +55,27 @@ NB:
 - Les données LATEST correspondent aux DERNIERS FICHIERS mis à jour quotidiennement, et qui vont du mois de janvier de l'année précédente au mois en cours même partiel.
 - Les données QUOTDIENNES agrégées mensuellement ne sont pas simplement équivalentes aux donnée MENSUELLES. Les paramètres ne sont pas strictement les mêmes. Certains paramètres quotidiens n'existent pas en mensuel (par exemple concernant le vent), mais les paramètres mensuels sont globalement plus nombreux à cause des paramètres "calculés" (par exemple des NOMBRES DE JOURS DE PLUIE/GELEE/CHALEUR/etc.., ainsi que des précipitations MENSUELLES ESTIMEES 'RR_ME' plus anciennes que les mesures)
 
+### Portail meteo.data.gouv.fr - Téléchargement-affichage-Extraction des données HORAIRES LATEST de Météo-France (RR-T-Vent)
+Une connexion internet est nécessaire pour le téléchargement automatique des archives de données.
+
+1) Téléchargement des fichiers HORAIRES et décompression automatique, pour différents postes (si besoin dans plusieurs départements mais au prix d'une longue durée de lecture)
+2) Tracé du graphique chronologique HORAIRE pour le paramètre Précipitations RR des postes choisis par l'utilisateur
+3) Tracé du graphique chronologique de l'agrégation QUOTIDIENNE
+4) Sauvegarde d'un fichier excel rassemblant:
+    - la comparaison des paramètres QUOTIDIENS & MENSUELS pour les postes et la période choisis, ainsi que les graphiques pour les précipitations uniquement
+    - NB: Les données intégrales HORAIRES ne sont pas sauvegardées pour cause de poids excessif (tous paramètres de la période "Latest" pour tous les postes des départements concernés).
+
+data : https://meteo.data.gouv.fr/ (6 min, horaire, quotidien, mensuel)<br>
+Fiche PDF des postes : https://www.data.gouv.fr/fr/datasets/r/bee4b0c7-260a-40fe-b463-ed5631d6dc39 (paramètres et périodes de mesure)<br>
+Fichier CSV descriptif champs: https://www.data.gouv.fr/fr/datasets/r/6a8df7e9-45ff-445d-9260-6c65475dda86
+
+Utilisez mon autre script pour visualiser la carte des postes météorologiques dont la liste est fournie par Météo-France sous forme de fichier JSON https://meteo.data.gouv.fr/https://www.data.gouv.fr/fr/datasets/r/1fe544d8-4615-4642-a307-5956a7d90922
+
+NB: 
+- Les données LATEST correspondent aux DERNIERS FICHIERS mis à jour quotidiennement, et qui vont du mois de janvier de l'année précédente à la veille du jour en cours même partielle.
+- Les données HORAIRES agrégées quotidiennement ne sont pas simplement équivalentes aux donnée QUOTIDIENNES car les paramètres ne sont pas strictement les mêmes. Certains paramètres horaires n'existent pas en quotidiens (ex. DRR1 durée des précipitations (en mn/heure)), et inversement
+<img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/meteo.data%20HOR_latest-2022-2023.png" width="45%"></img>
+
 ### Données climatiques quotidienne (SIM2 = SAFRAN-ISBA) - Extraction de série chronologique pour une maille (1x1 km)
 Auparavant, télécharger les données depuis le portail ci-dessous (chaque décennie repésente 1.1 Go en archive et 5 Go décompressé)<br>
 1) Lecture du fichier de la décennie voulue
