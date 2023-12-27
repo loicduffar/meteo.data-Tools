@@ -2,8 +2,8 @@
 Notebooks python de Visualisation-Extraction (& Téléchargement éventuellement) des données de Météo-France, ouvertes en open-data en décembre 2023, en ligne sur [meteo.data.gouv.fr](https://meteo.data.gouv.fr/)
 
 ### Carte des postes météorologiques de Météo-France (Métropole & outre-mer)
-Une connexion internet est nécessaire pour accéder au fichier JSON et au fond de carte
-
+Une connexion internet est nécessaire pour accéder au fichier JSON et au fond de carte<br>
+NB: les fichier JSON est incomplet à ce jour (les données comportent des postes absents de la liste JSON)
 - La carte dynamique des postes est tracée à partir du fichier JSON de Météo-France (avec l'affichage des noms du poste et de la commune, ainsi que l'alitude)<br>
 - La carte dynamique est enregistrée en Html, ainsi qu'en version statique png
 - La liste est enregistrée au format excel
