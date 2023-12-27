@@ -31,8 +31,9 @@ NB:
 - Les données LATEST correspondent aux DERNIERS fichiers mis à jour quotidiennement, et qui vont du mois de janvier de l'année précédente au mois en cours même partiel.
 - Les données MENSUELLES ne sont pas simplement équivalentes à des données QUOTIDIENNE agrégées (les paramètres ne sont pas strictement les mêmes. Par exemple, il existe des des NOMBRES DE JOURS DE PLUIE/GELEE/CHALEUR/etc.., ainsi que des précipitations MENSUELLES ESTIMEES 'RR_ME' plus anciennes que les mesures)
 
-<img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/meteo.data%20QUOT_latest-2022-2023_RR-T-Vent.png" width="45%"></img>
-<img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/meteo.data%20MENS_latest-2022-2023.png" width="45%"></img>
+<img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/meteo.data%20HOR_latest-2022-2023.png" width="40%"></img>
+<img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/meteo.data%20QUOT_latest-2022-2023_RR-T-Vent.png" width="40%"></img>
+<img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/meteo.data%20MENS_latest-2022-2023.png" width="40%"></img>
 
 ### Portail meteo.data.gouv.fr - Téléchargement-affichage-Extraction des données QUOTIDIENNES LATEST de Météo-France (RR-T-Vent)
 Ce script ntraite uniquement le fichier "RR-T-vent" (Paramètres liés aux Précipitations, Température & Vent) à l'exclusion du fichier "autres-parametres" contenant notamment l'ETP.<br>
@@ -74,8 +75,6 @@ Utilisez mon autre script pour visualiser la carte des postes météorologiques 
 NB: 
 - Les données LATEST correspondent aux DERNIERS FICHIERS mis à jour quotidiennement, et qui vont du mois de janvier de l'année précédente à la veille du jour en cours même partielle.
 - Les données HORAIRES agrégées quotidiennement ne sont pas simplement équivalentes aux donnée QUOTIDIENNES car les paramètres ne sont pas strictement les mêmes. Certains paramètres horaires n'existent pas en quotidiens (ex. DRR1 durée des précipitations (en mn/heure)), et inversement
-
-<img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/meteo.data%20HOR_latest-2022-2023.png" width="45%"></img>
 
 ### Données climatiques quotidienne (SIM2 = SAFRAN-ISBA) - Extraction de série chronologique pour une maille (1x1 km)
 Auparavant, télécharger les données depuis le portail ci-dessous (chaque décennie repésente 1.1 Go en archive et 5 Go décompressé)<br>
