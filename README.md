@@ -15,11 +15,11 @@ Fiche PDF des postes : https://www.data.gouv.fr/fr/datasets/r/bee4b0c7-260a-40fe
 <img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/postes%20meteo-france%20-%20carte_2023-12-20.png" width="30%"></img>
 <img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/postes%20meteo-france%20-%20carte_2023-12-20_monde.png" width="30%"></img>
 
-### Portail meteo.data.gouv.fr - Téléchargement-affichage-Extraction des données MENSUELLES LATEST de Météo-France (Métropole & outre-mer)
-Une connexion internet est nécessaire pour l'accès en ligne aux archives des données
-1) Téléchargement des fichiers et décompression automatique, pour plusieurs départements si besoin
+### Portail meteo.data.gouv.fr - Téléchargement-affichage-Extraction des données MENSUELLES de Météo-France (Métropole & outre-mer)
+Une connexion internet est nécessaire pour le téléchargement automatique des archives de données.
+1) Téléchargement des fichiers et décompression automatique, pour différents postes, dans plusieurs départements si besoin
 2) Tracé du graphique chronologique pour le paramètre Précipitations RR des postes choisis par l'utilisateur
-3) Sauvegarde des données intégrales et du graphique dans un fichier Excel (tous paramètres de la période "Latest" pour tous les postes des départements concernés).
+3) Sauvegarde des données intégrales et du graphique dans un fichier Excel (tous paramètres pour tous les postes des départements concernés).
 
 data : https://meteo.data.gouv.fr/ (6 min, horaire, quotidien, mensuel)<br>
 Fiche PDF des postes : https://www.data.gouv.fr/fr/datasets/r/bee4b0c7-260a-40fe-b463-ed5631d6dc39 (paramètres et périodes de mesure)<br>
@@ -28,7 +28,7 @@ Fichier CSV descriptif champs: https://www.data.gouv.fr/fr/datasets/r/6d4ac560-8
 Utilisez mon autre script pour visualiser sous forme de carte la liste des postes météorologiques fournie par Météo-France sous forme de fichier JSON https://meteo.data.gouv.fr/https://www.data.gouv.fr/fr/datasets/r/1fe544d8-4615-4642-a307-5956a7d90922
 
 NB:
-- Les données LATEST correspondent aux DERNIERS fichiers mis à jour quotidiennement, et qui vont du mois de janvier de l'année précédente au mois en cours même partiel.
+- Les historiques MENSUELS sont réparties en 3 fichiers pour chaque département: xxxx-1949, previous-1950-2022, latest-2023-2024 (LATEST indique le dernier fichier mis à jour quotidiennement depuis janvier de l'année précédente jusqu'au mois en cours, XXXX représent l'année de début de la période la plus ancienne variable selon le département).
 - Les données MENSUELLES ne sont pas simplement équivalentes à des données QUOTIDIENNE agrégées (les paramètres ne sont pas strictement les mêmes. Par exemple, il existe des des NOMBRES DE JOURS DE PLUIE/GELEE/CHALEUR/etc.., ainsi que des précipitations MENSUELLES ESTIMEES 'RR_ME' plus anciennes que les mesures)
 
 <img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/meteo.data%20HOR_latest-2022-2023.png" width="30%"></img>
