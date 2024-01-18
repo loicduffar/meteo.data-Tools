@@ -50,7 +50,8 @@ Une connexion internet est nécessaire pour accéder aux archives des données �
 data : https://meteo.data.gouv.fr/ (6 min, horaire, quotidien, mensuel)<br>
 Fiche PDF des postes : https://www.data.gouv.fr/fr/datasets/r/bee4b0c7-260a-40fe-b463-ed5631d6dc39 (paramètres et périodes de mesure)<br>
 Fichier CSV descriptif champs: https://www.data.gouv.fr/fr/datasets/r/6a8df7e9-45ff-445d-9260-6c65475dda86
-
+- NB: code adapté au format du fichier JSON en décembre 2023 (ATTENTION le fichier JSON Météo-France est variable entre 2 formats, ce qui oblige à supprimer parfois ".T" à la ligne df = pd.DataFrame(data_json['features']).T)
+  
 Utilisez mon autre script pour visualiser sous forme de carte la liste des postes météorologiques fournie par Météo-France sous forme de fichier JSON https://meteo.data.gouv.fr/https://www.data.gouv.fr/fr/datasets/r/1fe544d8-4615-4642-a307-5956a7d90922
 
 NB: 
@@ -66,7 +67,7 @@ Une connexion internet est nécessaire pour le téléchargement automatique des 
 4) Sauvegarde d'un fichier excel rassemblant:
     - la comparaison des paramètres QUOTIDIENS & MENSUELS pour les postes et la période choisis, ainsi que les graphiques pour les précipitations uniquement
     - NB: Les données intégrales HORAIRES ne sont pas sauvegardées pour cause de poids excessif (tous paramètres de la période "Latest" pour tous les postes des départements concernés).
-
+- NB: code adapté au format du fichier JSON en décembre 2023 (ATTENTION le fichier JSON Météo-France est variable entre 2 formats, ce qui oblige à supprimer parfois ".T" à la ligne df = pd.DataFrame(data_json['features']).T)
 data : https://meteo.data.gouv.fr/ (6 min, horaire, quotidien, mensuel)<br>
 Fiche PDF des postes : https://www.data.gouv.fr/fr/datasets/r/bee4b0c7-260a-40fe-b463-ed5631d6dc39 (paramètres et périodes de mesure)<br>
 Fichier CSV descriptif champs: https://www.data.gouv.fr/fr/datasets/r/5d0f9af9-149b-463a-9472-445dafb698d9
@@ -86,6 +87,7 @@ Auparavant, télécharger les données depuis le portail ci-dessous (chaque déc
 3) Tracé du graphique chronologique de la décennie pour les paramètres et le point de maille choisis (par exemple 10 paramètres pour limiter l'occupation en mémoire vive)
 4) Sauvegarde des séries chronologiques avec le graphique dans un fichier Excel<br>
     Le graphique dynamique est également sauvegardé en Html
+- NB: code adapté au format du fichier JSON en décembre 2023 (ATTENTION le fichier JSON Météo-France est variable entre 2 formats, ce qui oblige à supprimer parfois ".T" à la ligne df = pd.DataFrame(data_json['features']).T)
 
 <img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/SIM2_graph.png" width="45%"></img>
 <img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/SIM2_map%20.png" width="45%"></img>
