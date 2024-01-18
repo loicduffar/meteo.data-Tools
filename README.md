@@ -25,7 +25,8 @@ Une connexion internet est nécessaire pour le téléchargement automatique des 
 data : https://meteo.data.gouv.fr/ (6 min, horaire, quotidien, mensuel)<br>
 Fiche PDF des postes : https://www.data.gouv.fr/fr/datasets/r/bee4b0c7-260a-40fe-b463-ed5631d6dc39 (paramètres et périodes de mesure)<br>
 Fichier CSV descriptif champs: https://www.data.gouv.fr/fr/datasets/r/6d4ac560-8f7c-477f-9a3f-3c33137fc04e
-
+- NB: code adapté au format du fichier JSON en décembre 2023 (ATTENTION le fichier JSON Météo-France est variable entre 2 formats, ce qui oblige à supprimer parfois ".T" à la ligne df = pd.DataFrame(data_json['features']).T)
+  
 Utilisez mon autre script pour visualiser sous forme de carte la liste des postes météorologiques fournie par Météo-France sous forme de fichier JSON https://meteo.data.gouv.fr/https://www.data.gouv.fr/fr/datasets/r/1fe544d8-4615-4642-a307-5956a7d90922
 
 NB:
