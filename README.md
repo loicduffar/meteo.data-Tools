@@ -1,20 +1,24 @@
 # meteo.data.gouv.fr - Tools
 Notebooks python de Visualisation-Extraction (& Téléchargement éventuellement) des données de Météo-France, ouvertes en open-data en décembre 2023, en ligne sur [meteo.data.gouv.fr](https://meteo.data.gouv.fr/)
 
-### Portail meteo.data.gouv.fr - Carte des postes météorologiques de Météo-France EN ACTIVITE (Métropole & outre-mer)
-Une connexion internet est nécessaire pour accéder au fichier JSON Météo-France et au fond de carte OpenStreetMap<br>
-NB: le fichier JSON Météo-France ne couvre que les postes en activité (par contre les données sur meteo.gouv.fr incluent tous les postes disposant de mesures sur la période de l'archive)<br>
-Pour connaitre les postes fermés et leur historique, allez sur https://publitheque.meteo.fr/ où les données sont également gratuites et téléchargeables
-- La carte dynamique des postes est tracée à partir du fichier JSON de Météo-France (avec l'affichage des noms du poste et de la commune, ainsi que l'alitude)<br>
-- La carte dynamique est enregistrée en Html, ainsi qu'en version statique png
-- La liste est enregistrée au format excel
-- NB: code adapté au format du fichier JSON en décembre 2023 (ATTENTION le fichier JSON Météo-France est variable entre 2 formats, ce qui oblige à supprimer parfois ".T" à la ligne df = pd.DataFrame(data_json['features']).T)
+### Portail meteo.data.gouv.fr - Carte des postes météorologiques de Météo-France (Métropole & outre-mer)
+<p style="color:red;">CE code fonctionnel en janvier 2024 fonctionne maintenant en mode en partie dégradée, faute de quoi l'exécution est sans fin. L'instruction de sauvegarde du fichier PNG par fig.write_image(file_png) est pour l'instant désactivée.</p>
 
-data : https://meteo.data.gouv.fr/ (6 min, horaire, quotidien, mensuel)<br>
-Fiche PDF des postes : https://www.data.gouv.fr/fr/datasets/r/bee4b0c7-260a-40fe-b463-ed5631d6dc39 (paramètres et périodes de mesure)<br>
+Une connexion internet est nécessaire pour accéder aux fichiers TEXTE Météo-France et au fond de carte OpenStreetMap<br>
+NB: les fichiers TEXTE couvrent tous les postes OUVERTS et FERMES, ainsi que les postes dit "complémentaires" qui correspondent au Type 5 (expertise absente ou non garantie)<br>
+Pour connaitre le détail des postes, et notamment l'historique pour chaque paramètre, allez sur https://publitheque.meteo.fr/ où les données sont également gratuites et téléchargeables
 
-<img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/postes%20meteo-france%20-%20carte_2023-12-20.png" width="30%"></img>
-<img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/postes%20meteo-france%20-%20carte_2023-12-20_monde.png" width="30%"></img>
+- La carte dynamique des postes est tracée à partir du fichier TEXTE de Météo-France. Elle différencie les postes professionnels et complémentaires, et permet de sélectionner les postes fermés ou ouverts.<br>
+  Le survol à la souris permet d'afficher le noms du poste et de la commune, l'altitude, les coordonnées en lat/lon & Lambert, et surtout les dates d'ouverture et de fermeture<br>
+- La carte dynamique est enregistrée en Html (et théoriquement la version png si l'export fig.write_image() marche)
+- La liste est enregistrée au format excel, avec en plus l'url qui permet d'afficher le PDF Météo-France des informations détaillées sur la station (même si le document n'existe pas parfois)
+- NB: code adapté au nouveau format TEXTE beaucoup plus complet et stable que l'ancien fichier JSON abandonné par Météo-France après plus d'une année de problèmes pour les utilisateurs.
+
+data : https://meteo.data.gouv.fr/<br>
+Fiche PDF des postes : https://www.data.gouv.fr/fr/datasets/r/bee4b0c7-260a-40fe-b463-ed5631d6dc39 (paramètres et périodes de mesure)
+
+<img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/postes%20meteo-france%20-%20carte%20France_2025-03-08.png" width="30%"></img>
+<img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/postes%20meteo-france%20-%20carte%20Monde_2025-03-08.png" width="30%"></img>
 
 ### Portail meteo.data.gouv.fr - Téléchargement-affichage-Extraction des données MENSUELLES de Météo-France (Métropole & outre-mer)
 Une connexion internet est nécessaire pour le téléchargement automatique des archives de données.
