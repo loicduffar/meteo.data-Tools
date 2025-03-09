@@ -12,7 +12,7 @@ Pour connaitre les détails sur les postes, et notamment la période de mesure p
   Le survol à la souris permet d'afficher le noms du poste et de la commune, l'altitude, les coordonnées en lat/lon & Lambert, et surtout les dates d'ouverture et de fermeture<br>
 - La carte dynamique est enregistrée en Html (et théoriquement la version png si l'export fig.write_image() marche)
 - La liste est enregistrée au format excel, avec en plus l'url qui permet d'afficher le PDF Météo-France des informations détaillées sur la station (même si le document n'existe pas parfois)
-- NB: code adapté au nouveau format TEXTE beaucoup plus complet et stable que l'ancien fichier JSON abandonné par Météo-France après plus d'une année de problèmes pour les utilisateurs.
+- NB: code adapté au nouveau format TEXTE beaucoup plus complet et stable que le fichier JSON posant encore des problèmes aux utilisateurs après plus d'une année de mise en service de meteo.data.gouv.fr.
 
 data : https://meteo.data.gouv.fr/<br>
 Fiche PDF des postes : https://www.data.gouv.fr/fr/datasets/r/bee4b0c7-260a-40fe-b463-ed5631d6dc39 (paramètres et périodes de mesure)
