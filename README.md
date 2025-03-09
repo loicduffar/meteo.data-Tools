@@ -6,7 +6,7 @@ Notebooks python de Visualisation-Extraction (& Téléchargement éventuellement
 
 Une connexion internet est nécessaire pour accéder aux fichiers TEXTE Météo-France et au fond de carte OpenStreetMap<br>
 NB: les fichiers TEXTE couvrent tous les postes OUVERTS et FERMES, ainsi que les postes dit "complémentaires" qui correspondent au Type 5 (expertise absente ou non garantie)<br>
-Pour connaitre le détail des postes, et notamment l'historique pour chaque paramètre, allez sur https://publitheque.meteo.fr/ où les données sont également gratuites et téléchargeables
+Pour connaitre les détails sur les postes, et notamment la période de mesure pour chaque paramètre, voir les fiches PDF accessibles en ligne au lien indiqué à la fin.
 
 - La carte dynamique des postes est tracée à partir du fichier TEXTE de Météo-France. Elle différencie les postes professionnels et complémentaires, et permet de sélectionner les postes fermés ou ouverts.<br>
   Le survol à la souris permet d'afficher le noms du poste et de la commune, l'altitude, les coordonnées en lat/lon & Lambert, et surtout les dates d'ouverture et de fermeture<br>
