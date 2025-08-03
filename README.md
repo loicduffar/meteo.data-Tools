@@ -108,3 +108,29 @@ Ce script ne traite que le fichier LATEST Quotidien, contenant le mois précéde
 Ce script a un intérêt dans 2 cas :
 - si le dernier mois est incomplet, cela permet d'avoir la valeur mensuelle partielle avant la diffusion par Météo-France 1 fois par mois de la valeur mensuelle officielle
 - Certains paramètres n'existent pas sous forme mensuelle (comme Equivalent en eau du manteau neigeux), cela permettra à terme de constituer un historique depuis 1958
+
+2025-07-Z20 11:49
+Téléchargement:  QUOT_SIM2_latest-20250601-20250719.gz
+Décompression QUOT_SIM2_latest-20250601-20250719.gz
+LAMBX	LAMBY	DATE	PRENEI_Q	PRELIQ_Q	T_Q	FF_Q	Q_Q	DLI_Q	SSI_Q	...	RESR_NEIGE6_Q	HTEURNEIGE_Q	HTEURNEIGE6_Q	HTEURNEIGEX_Q	SNOW_FRAC_Q	ECOULEMENT_Q	WG_RACINE_Q	WGI_RACINE_Q	TINF_H_Q	TSUP_H_Q
+0	600	24010	2025-06-01	0.0	0.3	15.5	4.8	8.672	2962.4	971.8	...	0.0	0.0	0.0	0.0	0.0	0.0	0.265	0.0	12.8	18.7
+1	600	24010	2025-06-02	0.0	0.2	15.1	3.9	8.017	2983.0	1755.3	...	0.0	0.0	0.0	0.0	0.0	0.0	0.265	0.0	12.0	19.2
+2	600	24010	2025-06-03	0.0	4.4	14.1	5.6	8.927	3138.6	528.3	...	0.0	0.0	0.0	0.0	0.0	0.0	0.263	0.0	10.7	15.6
+3	600	24010	2025-06-04	0.0	1.6	14.4	5.3	8.602	2946.5	979.5	...	0.0	0.0	0.0	0.0	0.0	0.0	0.264	0.0	10.9	16.6
+4	600	24010	2025-06-05	0.0	4.5	14.6	5.3	9.371	3308.5	541.5	...	0.0	0.0	0.0	0.0	0.0	0.0	0.264	0.0	14.0	16.0
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+484703	11960	17450	2025-07-15	0.0	0.0	24.9	1.9	14.310	3371.8	2726.6	...	0.0	0.0	0.0	0.0	0.0	0.0	0.218	0.0	20.7	29.1
+484704	11960	17450	2025-07-16	0.0	0.0	26.2	1.6	15.059	3428.4	2687.6	...	0.0	0.0	0.0	0.0	0.0	0.0	0.218	0.0	22.6	30.0
+484705	11960	17450	2025-07-17	0.0	0.0	26.4	1.5	15.206	3427.3	2390.4	...	0.0	0.0	0.0	0.0	0.0	0.0	0.217	0.0	22.2	31.2
+484706	11960	17450	2025-07-18	0.0	0.0	26.4	2.2	14.846	3431.0	2584.3	...	0.0	0.0	0.0	0.0	0.0	0.0	0.217	0.0	20.6	31.0
+484707	11960	17450	2025-07-19	0.0	0.3	26.3	3.2	16.752	3471.4	2158.8
+
+#### 1. Lecture de tous les fichiers PARQUET par décennie depuis 1958, et mémorisation des seuls paramètres choisis
+IMPOSSIBLE de charger en mémoire TOUS les paramètres pour l'historique COMPLET DEPUIS 1958
+
+Ce script ne gère ni le téléchargement ni la décompression des archives qui doit être effectué préalablement à la main (1h50 de décompression pour chaque décennie)
+- data: https://meteo.data.gouv.fr/datasets
+- Auteur: L. Duffar
+
+- 0. Lecture d'un unique fichier CSV Quotidien + enregistrement d'un fichier PARQUET. A FAIRE UNE FOIS POUR TOUTE JUSQU'A L'AVANT DERNIERE DECENNIE DEPUIS 1958
+- 1. Lecture de tous les fichiers PARQUET par décennie depuis 1958, et mémorisation des seuls paramètres choisis
