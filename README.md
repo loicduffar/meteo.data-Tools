@@ -98,3 +98,13 @@ Auparavant, télécharger les données depuis le portail ci-dessous (chaque déc
 
 <img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/SIM2_graph.png" width="45%"></img>
 <img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/SIM2_map%20.png" width="45%"></img>
+
+SIM2 Quotidien - Lecture des données du dernier mois (LATEST) & agrégation mensuelle
+Ce script ne traite que le fichier LATEST Quotidien, contenant le mois précédent et le dernier mois en cours
+- data: https://meteo.data.gouv.fr/datasets
+- Auteur: L. Duffar
+
+### SIM2 Quotidien - Lecture des données du dernier mois (LATEST) & agrégation mensuelle
+Ce script a un intérêt dans 2 cas :
+- si le dernier mois est incomplet, cela permet d'avoir la valeur mensuelle partielle avant la diffusion par Météo-France 1 fois par mois de la valeur mensuelle officielle
+- Certains paramètres n'existent pas sous forme mensuelle (comme Equivalent en eau du manteau neigeux), cela permettra à terme de constituer un historique depuis 1958
