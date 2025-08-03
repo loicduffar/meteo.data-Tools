@@ -139,6 +139,30 @@ Opérations:
 - 1. Lecture des fichiers CSV Météo-France couvrant la France entière depuis 1958 + enregistrement fichier PARQUET (il contient TOUS les paramètres sur la France ENTIERE depuis 1958 (territoire métropolitain)
 - 1bis. Lecture du fichier PARQET déjà généré pour OPTIONNEL POUR TEST UNIQUEMENT
 
+### SIM2 MENSUEL (SAFRAN) - Cartographie par MAILLE + fichier Excel agrégé par POLYGONE
+Version pour environnement 3.11.8 (numpy V1.26.4 pas encore en V2).<br>
+Ajout des indices SSWI dans le fichier excel de la moyenne par polygone (mais indices SSWI non cartographiés à ce jour)
+
+A RESOUDRE l'affichage de l'animation dans le notebook affiche par défaut un pas de temps qui n'est pas le premier (mais l'animation est correcte).
+- data : [meteo.data.gouv.fr](https://meteo.data.gouv.fr/)
+- Auteur: L. Duffar, P. Freydier
+--------------------------------------------------------------
+C'est le 2ème script de la chaine de traitement des données SIM2 MENSUELLES
+- Un 1er script permet de générer le fichier PARQUET de tous les paramètres pour la France entière, à partir des fichiers CSV originaux téléchargés automatiquement)
+- Ce 2ème script de traitement PAR MAILLE est indispensable pour générer un fichier EXCEL indispensable au 3ème script
+- Le 3ème script de traitement PAR POLYGONE utilise le fichier EXCEL créé précédemment pour générer des cartes agrégées par département, bassin-versant ou polygones quelconques
+--------------------------------------------------------------
+Ce 2EME SCRIPT produit les traitements suivants PAR MAILLE à partir d'un fichier PARQUET issu des CSV Météo-France :
+- cartographie mois par mois de 6 paramètres bruts prédéterminés
+
+- NB: les paramètre SSWI1 est lu et enregistré dans le fichier par polygone, mais ne fait pas l'objet de carte dans ce scrit
+- calcul et cartographie de la moyenne interannuelle sur une période d'années choisie (un fichier geotif est produit pour la carte annuelle),
+- cartographie de l'écart à cette moyenne pour chaque mois de la période d'années choisie,
+- A partir des polygones fournis, le script calcule la moyenne agrégée par polygone et génère un fichier EXCEL des séries chronologiques correspondantes. Ce fichier EXCEL alimente notamment un 3EME SCRIPT de traitement par POLYGONE).
+
+NB: Tout est personalisable en terme de secteur géographique (les paramètres ne le sont pas, à moins de faire évoluer le script)
+- Zone d'intérêt (1 polygone) pour laquelle les mailles seront traitées et cartographiées (ce qui permet de travailler sur toute la France, ici la région PACA)
+- Polygones multiples (fichier unique, à l'intérieur de la zone d'intérêt), sur lesquels les paramètres seront agrégeés par la moyenne (ici départements de PACA ou bassins versants de la Concession)
 NB: Le fichier PARQUET généré contient un dataframe pandas qui peut être lu par une simple instruction pd.read_parquet(). La lecture de tout l'historique SIM2 pour la France entière et la totalité des paramètre prend 10 s au lieu de 1 minute pour les fichier CSV. Cette rapidité est exploité pour le développement des scripts suivants de la chaine de traitement des données SIM2 MENSUELLES.
 
 
