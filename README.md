@@ -164,6 +164,8 @@ NB: Le fichier PARQUET généré contient un dataframe pandas qui peut être lu 
 
 <img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/SIM2_MENS_PACA_2025-01.png" width="45%" width="30%"></img>
 <img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/SIM2_MENS_PACA_1991-2020_T_MENS__Moy-Mens.html_Moy-Mens.png" width="50%"></img>
+<img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/SIM2_MENS_PACA_1991-2020_PRETOTM_MENS_Ecart_2025-06.png" width="60%"></img>
+
 
 
 
