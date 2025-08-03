@@ -125,12 +125,10 @@ LAMBX	LAMBY	DATE	PRENEI_Q	PRELIQ_Q	T_Q	FF_Q	Q_Q	DLI_Q	SSI_Q	...	RESR_NEIGE6_Q	HT
 484706	11960	17450	2025-07-18	0.0	0.0	26.4	2.2	14.846	3431.0	2584.3	...	0.0	0.0	0.0	0.0	0.0	0.0	0.217	0.0	20.6	31.0
 484707	11960	17450	2025-07-19	0.0	0.3	26.3	3.2	16.752	3471.4	2158.8
 
-#### 1. Lecture de tous les fichiers PARQUET par décennie depuis 1958, et mémorisation des seuls paramètres choisis
-IMPOSSIBLE de charger en mémoire TOUS les paramètres pour l'historique COMPLET DEPUIS 1958
-
+### SIM2 Quotidien - Lecture de l'historique depuis 1958 et création d'un fichier parquet unique le l'historique pour toute la France depuis 1958
 Ce script ne gère ni le téléchargement ni la décompression des archives qui doit être effectué préalablement à la main (1h50 de décompression pour chaque décennie)
-- data: https://meteo.data.gouv.fr/datasets
-- Auteur: L. Duffar
 
 - 0. Lecture d'un unique fichier CSV Quotidien + enregistrement d'un fichier PARQUET. A FAIRE UNE FOIS POUR TOUTE JUSQU'A L'AVANT DERNIERE DECENNIE DEPUIS 1958
-- 1. Lecture de tous les fichiers PARQUET par décennie depuis 1958, et mémorisation des seuls paramètres choisis
+- 1. Lecture de tous les fichiers PARQUET par décennie depuis 1958, et mémorisation des seuls paramètres choisis- POUR TEST UNIQUEMENT du fichier parquet généré
+
+
