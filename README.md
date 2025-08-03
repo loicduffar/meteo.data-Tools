@@ -164,7 +164,19 @@ NB: Le fichier PARQUET généré contient un dataframe pandas qui peut être lu 
 
 <img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/SIM2_MENS_PACA_2025-01.png" width="45%" width="30%"></img>
 <img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/SIM2_MENS_PACA_1991-2020_T_MENS__Moy-Mens.html_Moy-Mens.png" width="50%"></img>
-<img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/SIM2_MENS_PACA_1991-2020_PRETOTM_MENS_Ecart_2025-06.png" width="60%"></img>
+<img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/SIM2_MENS_PACA_1991-2020_PRETOTM_MENS_Ecart_2025-06.png" width="40%"></img>
+
+### SIM2 MENSUEL SIM2 (SAFRAN) - Cartographie de l'écart à la moyenne par POLYGONE pour un paramètres et un mois choisis
+--------------------------------------------------------------
+C'est le 3ème script de la chaine de traitement des données SIM2 MENSUELLES 
+- Un 1er script permet de générer le fichier PARQUET de tous les paramètres pour la France entière, à partir des fichiers CSV originaux téléchargés automatiquement)
+- Un 2ème script de traitement par maille est indispensable pour générer un fichier EXCEL indispensable au 3ème script
+- Le présent 3ème script de traitement par polygone utilise le fichier EXCEL créé précédemment pour générer des cartes/graphiques agrégés par  polygones quelconques, départements ou bassins-versants (= moyenne des mailles pour chaque polygone et pour chaque paramètre SIM2)
+--------------------------------------------------------------
+NB: Le présent script traite uniquement un tableau 2D représentant la moyenne par polygone (dataframe pandas, et non 3D rasters xarray représentant des cartes des mailles)
+
+- La statistique (écart à la moyenne et période de retour) est établie sur une période choisie par l'utilisateur (impérativement incluse dans la période contenue dans le fichier Excel).
+- SSWI en plus : le script trace également le graphique chronologique des index SSWI de 1 à 12 mois OPTIONNEL
 
 
 
