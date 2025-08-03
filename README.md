@@ -182,7 +182,23 @@ NB: Le présent script traite uniquement un tableau 2D représentant la moyenne 
 <img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/SIM2_MENS_DEPARTEMENT%20PACA_1991-2020_T_MENS_Historgrammes%20depuis%20septembre_2025-07.png" width="60%"></img>
 <img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/SIM2_MENS_DEPARTEMENT%20PACA_1960-2025_SSWI_Graphiques%20chronologiques.png" width="60%"></img>
 
+### meteo.data COMEPHORE - Lecture & visualisation des images radar de pluie en 1h
+Les données doivent être téléchargées à la main (1 fichier par mois). Les images horaires couvrent la France métropolitaine et le géoréférencement original est en coordonnées Lambert2 étendues.
+- Tracé des cartes de l'évènement (carte statique heure par heure PNG + carte animée HTML) - OPTIONNEL
+- Extraction de la série chronologique pour un point (obligatoire) et un polygone et stockage dans un fichier Excel
+- Tracé d'une carte de cumul sur une période choisie PGN, geoTIFF & HTML - OPTIONNEL
+- Sauvegarde dans un fichier excel
 
+Il faut nécessairement personaliser:
+- Le dossier des fichier geotiff Météo-France (NB: le nom du sous-dossier doit être explicite car il sera utilisé pour nommer les fichiers de sortie)
+- Un dossier de sortie quelconque pour les fichiers de sortie
+- un rectangle d'intérêt à extraire de l'image originale de la France hexagonale entière 
+- une date de début et de fin de l'èvènement (nécessairement incluses dans les fichiers d'entrée )
+- un point (obligatoire) et un polygone (optionnel) desquels extraire la série chronologique de la pluie (en projection WGS84 lat long)
+- Un fichier vecteur (optionnel) permettant d'habiller la carte, avec des cours d'eau par exemple
+- Toute la subtilité de la personalisation consiste à définir tous ces parmètres de façon cohérente
+
+NB: toutes les coordonnées de personalisation doivent être exprimées en lat lon WGS84 (rectangle d'intérêt, point, polygone, couche d'habillage)
 
 
 
