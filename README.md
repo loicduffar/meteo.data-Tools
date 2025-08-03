@@ -179,7 +179,9 @@ NB: Le présent script traite uniquement un tableau 2D représentant la moyenne 
 - SSWI en plus : le script trace également le graphique chronologique des index SSWI de 1 à 12 mois OPTIONNEL
 
 <img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/SIM2_MENS_DEPARTEMENTS%20PACA_1991-2020_T_MENS_Ecart_2025-07.png" width="40%"></img>
-<img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/SIM2_MENS_DEPARTEMENT%20PACA_1991-2020_T_MENS_Historgrammes%20depuis%20septembre_2025-07.png" width="30%"></img>
+<img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/SIM2_MENS_DEPARTEMENT%20PACA_1991-2020_T_MENS_Historgrammes%20depuis%20septembre_2025-07.png" width="60%"></img>
+<img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/SIM2_MENS_DEPARTEMENT%20PACA_1960-2025_SSWI_Graphiques%20chronologiques.png" width="60%"></img>
+
 
 
 
