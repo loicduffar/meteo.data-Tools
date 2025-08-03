@@ -129,6 +129,21 @@ LAMBX	LAMBY	DATE	PRENEI_Q	PRELIQ_Q	T_Q	FF_Q	Q_Q	DLI_Q	SSI_Q	...	RESR_NEIGE6_Q	HT
 Ce script ne gère ni le téléchargement ni la décompression des archives qui doit être effectué préalablement à la main (1h50 de décompression pour chaque décennie)
 
 Intérêt : les futurs développements pourront lire les fichiers PARQUET par décennie plus rapidement que les fichier CSV originaux
+
+### SIM2 MENS (SAFRAN) - Génération d'un fichier PARQUET unique par téléchargement/lecture des fichiers CSV de Météo-France par décennie depuis 1958
+- datat : https://meteo.data.gouv.fr/<br>
+- Auteur: [L. Duffar](https://github.com/loicduffar)
+
+Génération d'un fichier PARQUET unique représentant un dataframe pour TOUS les paramètres de la france ENTIERE et de l'historique ENTIER depuis 1958
+- Ce fichier PARQUET est un dataframe d'une image fidèle des données originales . Le format PARQUET plus compact et rapide permet l'exécution des autres scripts traitant les données sous forme de rasters géographiques temporels (dataset xarray). Ce notebook montre également la construction de ce dataset xarray à titre d'exemple.
+- En option un fichier Excel peut être généré pour des utilisateurs lambdas sans compétence de programmation
+
+Opérations:
+- 0. Personalisation / Importation
+- 1. Lecture des fichiers CSV Météo-France couvrant la France entière depuis 1958 + enregistrement fichier PARQUET (il contient TOUS les paramètres sur la France ENTIERE depuis 1958 (territoire métropolitain)
+- 1bis. Lecture du fichier PARQET déjà généré pour OPTIONNEL POUR TEST UNIQUEMENT
+
+NB: Le fichier PARQUET généré contient un dataframe pandas qui peut être lu par une simple instruction pd.read_parquet(). La lecture de tout l'historique SIM2 pour la France entière et la totalité des paramètre prend 10 s au lieu de 1 minute pour les fichier CSV. Cette rapidité est exploité pour le développement des scripts suivants de la chaine de traitement des données SIM2 MENSUELLES.
 - 0. Lecture d'un unique fichier CSV Quotidien + enregistrement d'un fichier PARQUET. A FAIRE UNE FOIS POUR TOUTE JUSQU'A L'AVANT DERNIERE DECENNIE DEPUIS 1958
 - 1. Lecture de tous les fichiers PARQUET par décennie depuis 1958, et mémorisation des seuls paramètres choisis
 
