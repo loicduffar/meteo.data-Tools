@@ -178,6 +178,9 @@ NB: Le présent script traite uniquement un tableau 2D représentant la moyenne 
 - La statistique (écart à la moyenne et période de retour) est établie sur une période choisie par l'utilisateur (impérativement incluse dans la période contenue dans le fichier Excel).
 - SSWI en plus : le script trace également le graphique chronologique des index SSWI de 1 à 12 mois OPTIONNEL
 
+<img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/SIM2_MENS_DEPARTEMENTS%20PACA_1991-2020_T_MENS_Ecart_2025-07.png" width="40%"></img>
+
+
 
 
 
