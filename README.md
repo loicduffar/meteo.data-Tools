@@ -139,6 +139,6 @@ Opérations:
 - 1. Lecture des fichiers CSV Météo-France couvrant la France entière depuis 1958 + enregistrement fichier PARQUET (il contient TOUS les paramètres sur la France ENTIERE depuis 1958 (territoire métropolitain)
 - 1bis. Lecture du fichier PARQET déjà généré pour OPTIONNEL POUR TEST UNIQUEMENT
 
-NB: Le fichier PARQUET généré contient un dataframe pandas qui peut être lu par une simple instruction pd.read_parquet(). La lecture de tout l'historique SIM2 pour la France entière et la totalité des paramètre prend 10 s au lieu de 1 minute pour les fichier CSV. Cette rapidité est exploité pour le développement des scripts suivants de la chaine de traitement des 
+NB: Le fichier PARQUET généré contient un dataframe pandas qui peut être lu par une simple instruction pd.read_parquet(). La lecture de tout l'historique SIM2 pour la France entière et la totalité des paramètre prend 10 s au lieu de 1 minute pour les fichier CSV. Cette rapidité est exploité pour le développement des scripts suivants de la chaine de traitement des données SIM2 MENSUELLES.
 
 
