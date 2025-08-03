@@ -200,5 +200,8 @@ Il faut nécessairement personaliser:
 
 NB: toutes les coordonnées de personalisation doivent être exprimées en lat lon WGS84 (rectangle d'intérêt, point, polygone, couche d'habillage)
 
+<img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/Pluie%20radar%20COMEPHORE%202020-10-02%2014_Alex.png" width="60%"></img>
+
+
 
 
