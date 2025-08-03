@@ -143,9 +143,6 @@ Opérations:
 Version pour environnement 3.11.8 (numpy V1.26.4 pas encore en V2).<br>
 Ajout des indices SSWI dans le fichier excel de la moyenne par polygone (mais indices SSWI non cartographiés à ce jour)
 
-A RESOUDRE l'affichage de l'animation dans le notebook affiche par défaut un pas de temps qui n'est pas le premier (mais l'animation est correcte).
-- data : [meteo.data.gouv.fr](https://meteo.data.gouv.fr/)
-- Auteur: L. Duffar, P. Freydier
 --------------------------------------------------------------
 C'est le 2ème script de la chaine de traitement des données SIM2 MENSUELLES
 - Un 1er script permet de générer le fichier PARQUET de tous les paramètres pour la France entière, à partir des fichiers CSV originaux téléchargés automatiquement)
@@ -164,5 +161,7 @@ NB: Tout est personalisable en terme de secteur géographique (les paramètres n
 - Zone d'intérêt (1 polygone) pour laquelle les mailles seront traitées et cartographiées (ce qui permet de travailler sur toute la France, ici la région PACA)
 - Polygones multiples (fichier unique, à l'intérieur de la zone d'intérêt), sur lesquels les paramètres seront agrégeés par la moyenne (ici départements de PACA ou bassins versants de la Concession)
 NB: Le fichier PARQUET généré contient un dataframe pandas qui peut être lu par une simple instruction pd.read_parquet(). La lecture de tout l'historique SIM2 pour la France entière et la totalité des paramètre prend 10 s au lieu de 1 minute pour les fichier CSV. Cette rapidité est exploité pour le développement des scripts suivants de la chaine de traitement des données SIM2 MENSUELLES.
+
+<img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/SIM2_MENS_PACA_2025-01.png" width="45%"></img>
 
 
