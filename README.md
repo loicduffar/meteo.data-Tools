@@ -163,5 +163,7 @@ NB: Tout est personalisable en terme de secteur géographique (les paramètres n
 NB: Le fichier PARQUET généré contient un dataframe pandas qui peut être lu par une simple instruction pd.read_parquet(). La lecture de tout l'historique SIM2 pour la France entière et la totalité des paramètre prend 10 s au lieu de 1 minute pour les fichier CSV. Cette rapidité est exploité pour le développement des scripts suivants de la chaine de traitement des données SIM2 MENSUELLES.
 
 <img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/SIM2_MENS_PACA_2025-01.png" width="45%"></img>
+<img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/SIM2_MENS_PACA_1991-2020_T_MENS__Moy-Mens.html_Moy-Mens.png"></img>
+
 
 
