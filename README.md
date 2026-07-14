@@ -204,7 +204,7 @@ NB: toutes les coordonnées de personalisation doivent être exprimées en lat l
 
 ### meteo.data Cartographie des ARCHIVES de VIGILANCES Météo-France de l'hexagone
 - data : https://meteo.data.gouv.fr/datasets/69cb8c3efb376113fa42881a
-<img src="[https://github.com/loicduffar/meteo.data-Tools/blob/main/out/Pluie%20radar%20COMEPHORE%202020-10-02%2014_Alex.png](https://github.com/loicduffar/meteo.data-Tools/blob/main/out/VIGILANCES%20planche_recapitulative_ete2026_r%C3%A9duit.png)" width="100%"></img>
+<img src="https://github.com/loicduffar/meteo.data-Tools/blob/main/out/VIGILANCES%20planche_recapitulative_ete2026_r%C3%A9duit.png" width="100%"></img>
 
 
 
